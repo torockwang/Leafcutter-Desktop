@@ -1,0 +1,2 @@
+cf16af223f6e43724883fa65cb835cfe39f764c43c843536ce0b798d9def0eb5  Leafcutter-Desktop-1.6-Installer.pkg
+5b71142a19eba4f634bd9e54d62557bdcb648852aed905223d5588618dede182  Leafcutter-Desktop-Intel-1.6-Installer.pkg

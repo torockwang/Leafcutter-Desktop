@@ -8,18 +8,18 @@
 
 ## 下载
 
-当前版本：**1.5.7（构建号 27）**。
+当前版本：**1.6（构建号 28）**。
 
 | 你的 Mac | 安装包 | 系统要求 |
 | --- | --- | --- |
-| Apple 芯片（M 系列） | [下载 Apple 芯片版](https://github.com/torock-netizen/Leafcutter-Desktop/releases/download/v1.5.7/Leafcutter-Desktop-1.5.7-Installer.pkg) | macOS 14 或更新版本 |
-| Intel 处理器 | [下载 Intel 兼容版](https://github.com/torock-netizen/Leafcutter-Desktop/releases/download/v1.5.7/Leafcutter-Desktop-Intel-1.5.7-Installer.pkg) | 目标兼容 macOS 10.14 Mojave 或更新版本 |
+| Apple 芯片（M 系列） | [下载 Apple 芯片版](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.6/Leafcutter-Desktop-1.6-Installer.pkg) | macOS 14 或更新版本 |
+| Intel 处理器 | [下载 Intel 兼容版](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.6/Leafcutter-Desktop-Intel-1.6-Installer.pkg) | 目标兼容 macOS 10.14 Mojave 或更新版本 |
 
 不确定处理器类型？打开苹果菜单 → “关于本机”，查看“芯片”或“处理器”。
 
 Intel 版已在 Apple 芯片 Mac 的 Rosetta 环境下通过启动及视频播放检查，**尚未在 Mojave 实机上验证**。
 
-[查看最新发行版](https://github.com/torock-netizen/Leafcutter-Desktop/releases/latest) · [下载 SHA-256 校验值](https://github.com/torock-netizen/Leafcutter-Desktop/releases/download/v1.5.7/SHA256SUMS.txt)
+[查看最新发行版](https://github.com/torockwang/Leafcutter-Desktop/releases/latest) · [下载 SHA-256 校验值](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.6/SHA256SUMS.txt)
 
 ## 安装与使用
 
@@ -31,13 +31,15 @@ Intel 版已在 Apple 芯片 Mac 的 Rosetta 环境下通过启动及视频播�
 
 关闭介绍或权限窗口会取消本次启动。应用是手动启动的桌面演示，不会自动启用 macOS 的闲置屏幕保护程序。
 
-## 1.5.7 更新
+## 1.6 更新
 
-- 中英文权限引导、创作故事和独立鸣谢页。
-- 博物馆参观照片与压缩后的静音视频。
-- 修复视频加载及播放问题。
-- 已授权启动不再闪现权限引导；关闭窗口后取消待启动的倒计时。
-- 中文应用名称“切叶蚁模拟器”，两个版本均安装到标准“应用程序”目录。
+- 复用叶面与通路检查结果，减少重复几何计算。
+- 压缩网格邻接缓存，复用 Metal 几何数据与缓冲区。
+- 预备搬运音效，适配显示器刷新节奏。
+- 保留原有切割和交通规则；不包含机器学习模型。
+- 保留中英文引导、照片、静音视频、烟花与统计，安装到标准“应用程序”目录。
+
+此版本改善性能，但不承诺完全消除所有卡顿；少数场景更新尖峰仍在优化。
 
 ## 隐私
 
@@ -49,6 +51,6 @@ Intel 版已在 Apple 芯片 Mac 的 Rosetta 环境下通过启动及视频播�
 
 ## 反馈
 
-请在 [Issues](https://github.com/torock-netizen/Leafcutter-Desktop/issues) 中反馈问题，注明应用版本、macOS 版本和 Mac 处理器类型。截图前请遮挡桌面上的个人信息。
+请在 [Issues](https://github.com/torockwang/Leafcutter-Desktop/issues) 中反馈问题，注明应用版本、macOS 版本和 Mac 处理器类型。截图前请遮挡桌面上的个人信息。
 
 本仓库仅提供编译后的安装包和使用说明，应用源码单独维护。

@@ -8,18 +8,18 @@ Leafcutter Desktop freezes your current desktop into a giant “leaf.” Ants ex
 
 ## Download
 
-Current version: **1.5.7 (build 27)**.
+Current version: **1.6 (build 28)**.
 
 | Your Mac | Installer | System requirements |
 | --- | --- | --- |
-| Apple Silicon (M-series) | [Download Apple Silicon build](https://github.com/torock-netizen/Leafcutter-Desktop/releases/download/v1.5.7/Leafcutter-Desktop-1.5.7-Installer.pkg) | macOS 14 or later |
-| Intel processor | [Download Intel compatibility build](https://github.com/torock-netizen/Leafcutter-Desktop/releases/download/v1.5.7/Leafcutter-Desktop-Intel-1.5.7-Installer.pkg) | Targets macOS 10.14 Mojave or later |
+| Apple Silicon (M-series) | [Download Apple Silicon build](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.6/Leafcutter-Desktop-1.6-Installer.pkg) | macOS 14 or later |
+| Intel processor | [Download Intel compatibility build](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.6/Leafcutter-Desktop-Intel-1.6-Installer.pkg) | Targets macOS 10.14 Mojave or later |
 
 Not sure which processor you have? Open the Apple menu → About This Mac and look for Chip or Processor.
 
 The Intel build passed startup and video playback checks under Rosetta on an Apple Silicon Mac. **It has not been tested on a physical Mojave system.**
 
-[View the latest release](https://github.com/torock-netizen/Leafcutter-Desktop/releases/latest) · [Download SHA-256 checksums](https://github.com/torock-netizen/Leafcutter-Desktop/releases/download/v1.5.7/SHA256SUMS.txt)
+[View the latest release](https://github.com/torockwang/Leafcutter-Desktop/releases/latest) · [Download SHA-256 checksums](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.6/SHA256SUMS.txt)
 
 ## Install and use
 
@@ -31,13 +31,15 @@ The Intel build passed startup and video playback checks under Rosetta on an App
 
 Closing the story or permission window cancels that launch. This is a manually launched desktop animation; it does not automatically enable the macOS idle screen saver.
 
-## What’s new in 1.5.7
+## What’s new in 1.6
 
-- Bilingual permission onboarding, creation story, and a separate acknowledgements page.
-- Museum photos and a compact, silent video.
-- Fixes for video loading and playback.
-- No permission-guide flash on authorized launches; closing onboarding cancels the pending countdown.
-- A localized Chinese app name and installation into the standard Applications folder for both builds.
+- Reuses leaf-surface and route checks to reduce repeated geometry work.
+- Compacts grid adjacency caches and reuses Metal geometry and compute buffers.
+- Prepares carrying audio and adapts rendering cadence to the display refresh rate.
+- Preserves cutting and traffic rules; no machine-learning model is included.
+- Retains bilingual onboarding, photos, silent video, fireworks, and statistics, with installation into the standard Applications folder.
+
+This release improves performance but does not claim to eliminate all stutter; occasional scene-update spikes remain under investigation.
 
 ## Privacy
 
@@ -49,6 +51,6 @@ These installers are **not yet Apple Developer ID signed or notarized**. The pac
 
 ## Feedback
 
-Report problems in [Issues](https://github.com/torock-netizen/Leafcutter-Desktop/issues). Include the app version, macOS version, and Mac processor type. Hide personal information on your desktop before sharing screenshots.
+Report problems in [Issues](https://github.com/torockwang/Leafcutter-Desktop/issues). Include the app version, macOS version, and Mac processor type. Hide personal information on your desktop before sharing screenshots.
 
 This repository distributes compiled installers and documentation only. Application source code is maintained separately.
