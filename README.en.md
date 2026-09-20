@@ -8,18 +8,18 @@ Leafcutter Desktop freezes your current desktop into a giant “leaf.” Ants ex
 
 ## Download
 
-Current version: **1.6 (build 28)**.
+Current version: **1.7 (build 29)**.
 
 | Your Mac | Installer | System requirements |
 | --- | --- | --- |
-| Apple Silicon (M-series) | [Download Apple Silicon build](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.6/Leafcutter-Desktop-1.6-Installer.pkg) | macOS 14 or later |
-| Intel processor | [Download Intel compatibility build](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.6/Leafcutter-Desktop-Intel-1.6-Installer.pkg) | Targets macOS 10.14 Mojave or later |
+| Apple Silicon (M-series) | [Download Apple Silicon build](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.7/Leafcutter-Desktop-1.7-Installer.pkg) | macOS 14 or later |
+| Intel processor | [Download Intel compatibility build](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.7/Leafcutter-Desktop-Intel-1.7-Installer.pkg) | Targets macOS 10.14 Mojave or later |
 
 Not sure which processor you have? Open the Apple menu → About This Mac and look for Chip or Processor.
 
-The Intel build passed startup and video playback checks under Rosetta on an Apple Silicon Mac. **It has not been tested on a physical Mojave system.**
+The Intel build targets Mojave compatibility. **It has not been tested on a physical Mojave system.**
 
-[View the latest release](https://github.com/torockwang/Leafcutter-Desktop/releases/latest) · [Download SHA-256 checksums](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.6/SHA256SUMS.txt)
+[View the latest release](https://github.com/torockwang/Leafcutter-Desktop/releases/latest) · [Download SHA-256 checksums](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.7/SHA256SUMS.txt)
 
 ## Install and use
 
@@ -31,15 +31,16 @@ The Intel build passed startup and video playback checks under Rosetta on an App
 
 Closing the story or permission window cancels that launch. This is a manually launched desktop animation; it does not automatically enable the macOS idle screen saver.
 
-## What’s new in 1.6
+## What’s new in 1.7
 
-- Reuses leaf-surface and route checks to reduce repeated geometry work.
-- Compacts grid adjacency caches and reuses Metal geometry and compute buffers.
-- Prepares carrying audio and adapts rendering cadence to the display refresh rate.
-- Preserves cutting and traffic rules; no machine-learning model is included.
-- Retains bilingual onboarding, photos, silent video, fireworks, and statistics, with installation into the standard Applications folder.
+- Adds a small learned model for leaf-removal strategies. The bundled Tail v14 model assists with approach, pickup and recovery actions when ants stall, while preserving existing cutting, footing and traffic checks.
+- Adds stereo positioning to walking, biting and carrying sounds, with smooth panning based on screen position.
+- Fixes a cutting-arrival stall that prevented stance adjustments when some feet lacked support.
+- Retains bilingual onboarding, photos, silent video, fireworks and statistics.
 
-This release improves performance but does not claim to eliminate all stutter; occasional scene-update spikes remain under investigation.
+Known limitation: some regression scenarios still fail to finish and may stall during cleanup or traffic handling. This release does not include the full-round target-selection model currently in development, and does not guarantee stutter-free operation.
+
+The small model is trained offline during development, bundled with both builds and evaluated locally. The app does not train itself on users’ computers or upload desktop images.
 
 ## Privacy
 

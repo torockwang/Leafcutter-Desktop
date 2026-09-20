@@ -8,18 +8,18 @@
 
 ## 下载
 
-当前版本：**1.6（构建号 28）**。
+当前版本：**1.7（构建号 29）**。
 
 | 你的 Mac | 安装包 | 系统要求 |
 | --- | --- | --- |
-| Apple 芯片（M 系列） | [下载 Apple 芯片版](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.6/Leafcutter-Desktop-1.6-Installer.pkg) | macOS 14 或更新版本 |
-| Intel 处理器 | [下载 Intel 兼容版](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.6/Leafcutter-Desktop-Intel-1.6-Installer.pkg) | 目标兼容 macOS 10.14 Mojave 或更新版本 |
+| Apple 芯片（M 系列） | [下载 Apple 芯片版](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.7/Leafcutter-Desktop-1.7-Installer.pkg) | macOS 14 或更新版本 |
+| Intel 处理器 | [下载 Intel 兼容版](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.7/Leafcutter-Desktop-Intel-1.7-Installer.pkg) | 目标兼容 macOS 10.14 Mojave 或更新版本 |
 
 不确定处理器类型？打开苹果菜单 → “关于本机”，查看“芯片”或“处理器”。
 
-Intel 版已在 Apple 芯片 Mac 的 Rosetta 环境下通过启动及视频播放检查，**尚未在 Mojave 实机上验证**。
+Intel 版目标兼容 Mojave，**尚未在 Mojave 实机上验证**。
 
-[查看最新发行版](https://github.com/torockwang/Leafcutter-Desktop/releases/latest) · [下载 SHA-256 校验值](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.6/SHA256SUMS.txt)
+[查看最新发行版](https://github.com/torockwang/Leafcutter-Desktop/releases/latest) · [下载 SHA-256 校验值](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.7/SHA256SUMS.txt)
 
 ## 安装与使用
 
@@ -31,15 +31,16 @@ Intel 版已在 Apple 芯片 Mac 的 Rosetta 环境下通过启动及视频播�
 
 关闭介绍或权限窗口会取消本次启动。应用是手动启动的桌面演示，不会自动启用 macOS 的闲置屏幕保护程序。
 
-## 1.6 更新
+## 1.7 更新
 
-- 复用叶面与通路检查结果，减少重复几何计算。
-- 压缩网格邻接缓存，复用 Metal 几何数据与缓冲区。
-- 预备搬运音效，适配显示器刷新节奏。
-- 保留原有切割和交通规则；不包含机器学习模型。
-- 保留中英文引导、照片、静音视频、烟花与统计，安装到标准“应用程序”目录。
+- 增加小模型学习叶片切除策略：内置 Tail v14 模型，在停滞时辅助选择接近、夹取和恢复动作，保留现有切割、站位与交通检查。
+- 增加蚂蚁音效的立体声摆位：行走、咬叶和搬运声音随蚂蚁的屏幕位置平滑变化。
+- 修复到达切割位置后，部分足部缺少支撑时无法调整站位的问题。
+- 保留中英文引导、照片、静音视频、烟花与统计。
 
-此版本改善性能，但不承诺完全消除所有卡顿；少数场景更新尖峰仍在优化。
+已知限制：回归验证中仍有部分场景未能完成，可能出现收尾或交通停滞。此版本不包含正在开发的全程选点模型，不保证消除所有卡顿。
+
+小模型在开发期间离线训练，两个版本均随包提供并在本地运行；不会在用户电脑上自行训练，也不会上传桌面图像。
 
 ## 隐私
 
