@@ -1,2 +1,3 @@
 df65ee9c431f8488b61551aa59a9d1d4f40b3c4d79b55c6f76c36fb1cec51336  Leafcutter-Desktop-1.7-Installer.pkg
 dc1907b6998ea1014a523d8bc8ff9dc42a6af7d35f0c77a3af0b0dbda6bbcb10  Leafcutter-Desktop-Intel-1.7-Installer.pkg
+7e4cbb13b6ecdbd027821a4e1ac38979e5f8e0770fe61a4019832c5bb36f3e4b  Leafcutter-Desktop-Windows-1.7.2-x64-Setup.exe

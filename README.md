@@ -8,20 +8,29 @@
 
 ## 下载
 
-当前版本：**1.7（构建号 29）**。
+当前版本：**macOS 1.7（构建号 29） · Windows 1.7.2 预览版**。
 
-| 你的 Mac | 安装包 | 系统要求 |
+| 你的电脑 | 安装包 | 系统要求 |
 | --- | --- | --- |
 | Apple 芯片（M 系列） | [下载 Apple 芯片版](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.7/Leafcutter-Desktop-1.7-Installer.pkg) | macOS 14 或更新版本 |
 | Intel 处理器 | [下载 Intel 兼容版](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.7/Leafcutter-Desktop-Intel-1.7-Installer.pkg) | 目标兼容 macOS 10.14 Mojave 或更新版本 |
+| Windows，Intel / AMD 64 位 | [下载 Windows x64 预览版](https://github.com/torockwang/Leafcutter-Desktop/releases/download/windows-v1.7.2/Leafcutter-Desktop-Windows-1.7.2-x64-Setup.exe) | Windows 10 / 11（x64） |
 
-不确定处理器类型？打开苹果菜单 → “关于本机”，查看“芯片”或“处理器”。
+Windows 版包含本地小模型和立体声摆位，已完成 Windows 11 虚拟机整局测试。尚未在实体 Intel/AMD 电脑及 Windows 10 上完整验收，可能出现卡顿或停滞。
+
+[Windows 1.7.2 发布说明](https://github.com/torockwang/Leafcutter-Desktop/releases/tag/windows-v1.7.2) · [Windows SHA-256 校验值](https://github.com/torockwang/Leafcutter-Desktop/releases/download/windows-v1.7.2/SHA256SUMS-Windows-1.7.2.txt)
+
+不确定 Mac 处理器类型？打开苹果菜单 → “关于本机”，查看“芯片”或“处理器”。
 
 Intel 版目标兼容 Mojave，**尚未在 Mojave 实机上验证**。
 
 [查看最新发行版](https://github.com/torockwang/Leafcutter-Desktop/releases/latest) · [下载 SHA-256 校验值](https://github.com/torockwang/Leafcutter-Desktop/releases/download/v1.7/SHA256SUMS.txt)
 
 ## 安装与使用
+
+**Windows：**运行 `.exe` 安装包，默认安装到 `%LOCALAPPDATA%\Programs\Leafcutter Desktop`。从开始菜单或桌面快捷方式启动，在介绍页点击开始，倒计时后演示。移动鼠标或按 Esc 退出。程序不会自动修改系统屏保或锁屏设置。安装包尚未进行 Windows 代码签名，系统可能提示未知发布者。
+
+**macOS：**
 
 1. 下载适合你的 Mac 的 `.pkg` 安装包，按提示安装。
 2. 应用安装到 `/Applications/Leafcutter Desktop.app`。中文系统显示“切叶蚁模拟器”，英文系统显示“Leafcutter Desktop”。
@@ -48,10 +57,10 @@ Intel 版目标兼容 Mojave，**尚未在 Mojave 实机上验证**。
 
 ## 签名状态
 
-当前安装包**尚未完成 Apple Developer ID 签名和公证**。安装包未签名，内部应用采用临时签名，macOS 可能阻止安装或启动。如需正式签名和公证的版本，请等待后续发行版。
+macOS 安装包**尚未完成 Apple Developer ID 签名和公证**。安装包未签名，内部应用采用临时签名，macOS 可能阻止安装或启动。如需正式签名和公证的版本，请等待后续发行版。
 
 ## 反馈
 
-请在 [Issues](https://github.com/torockwang/Leafcutter-Desktop/issues) 中反馈问题，注明应用版本、macOS 版本和 Mac 处理器类型。截图前请遮挡桌面上的个人信息。
+请在 [Issues](https://github.com/torockwang/Leafcutter-Desktop/issues) 中反馈问题，注明应用版本、操作系统版本、处理器和显卡类型。截图前请遮挡桌面上的个人信息。
 
 本仓库仅提供编译后的安装包和使用说明，应用源码单独维护。
