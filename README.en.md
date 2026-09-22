@@ -6,6 +6,14 @@ Watch tiny ants carry your desktop away, one piece at a time.
 
 Leafcutter Desktop freezes your current desktop into a giant “leaf.” Ants explore it, cut out pieces, lift them up, and carry them away. Each completed round ends with fireworks and statistics before a new round begins.
 
+## What’s new in 1.7.4
+
+- **Press M to mute, then press again to restore sound.** Available on Apple Silicon, Intel Mac and Windows. Holding the key toggles only once.
+- Mute covers walking, cutting, carrying and cheering. The animation continues while you toggle audio. **Esc** and mouse movement still exit.
+- **Windows installer reduced by about 83.5%**: from approximately 132.7 MB to **21.9 MB**, using a native host and shared WebView2. If WebView2 is missing, first-time installation requires internet to install this separate component.
+
+[Full 1.7.4 release notes and all three installers](https://github.com/torockwang/Leafcutter-Desktop/releases/tag/v1.7.4)
+
 ## Download
 
 Current versions: **macOS 1.7.4 (build 30) · Windows 1.7.4 Preview**.
@@ -39,12 +47,6 @@ The Intel build targets Mojave compatibility. **It has not been tested on a phys
 5. Press **M** to mute or restore audio. Move your mouse or press **Esc** during the show to exit. Each completed round displays fireworks, elapsed time, the total number of ants, and the number of pieces cut. Another round starts unless interrupted.
 
 Closing the story or permission window cancels that launch. This is a manually launched desktop animation; it does not automatically enable the macOS idle screen saver.
-
-## What’s new in 1.7.4
-
-- Adds **M to mute/unmute** on all three platforms. Holding the key toggles once; existing exit controls are unchanged.
-- Replaces the bundled Windows Electron runtime with a native host and shared WebView2, reducing the installer from about 132.7 MB to 21.9 MB.
-- Preserves the 1.7 behavioral rules and learned recovery model; experimental full-round selection policy is not included.
 
 ## Retained 1.7 features
 
